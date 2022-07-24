@@ -34,7 +34,7 @@ for line in Lines:
         if (str(host.min_rtt or host.avg_rtt or host.max_rtt)) == '0.0' or str(host.rtts) == '[]':
             all_data.append(
                 ['{}'.format(hostname), '{}'.format(host.address),
-                 'ICMP DROP', 'ICMP DROP', 'ICMP DROP', '{}'.format(rtts), '{}'.format(host.jitter),
+                 'ICMP DROP', 'ICMP DROP', 'ICMP DROP', 'ICMP DROP', 'ICMP DROP',
                  '{}'.format(portcheck)]
             )
         else:
